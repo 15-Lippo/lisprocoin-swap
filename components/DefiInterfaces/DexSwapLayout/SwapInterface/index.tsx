@@ -8,8 +8,8 @@ import { abi as QuoterABI } from '@uniswap/v3-periphery/artifacts/contracts/lens
 
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/d57f136bd5024f4889c74a1d4f7ce760')
 
-// USDC-WETH pool address on mainnet for fee tier 0.05%
-const poolAddress = '0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640'
+// USDC-WETH pool address on mainnet for fee tier 0.10%
+const poolAddress = '0xD0355200111C2B21AAbC1a31552eCCDc5d4E905d'
 
 const poolContract = new ethers.Contract(poolAddress, IUniswapV3PoolABI, provider)
 
